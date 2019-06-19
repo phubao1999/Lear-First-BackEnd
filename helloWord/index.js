@@ -4,7 +4,8 @@ var bodyParser = require('body-parser');
 
 var users = [
     {id: 1, name: 'Bao'},
-    {id: 2, name: 'Hien Luong'}
+    {id: 2, name: 'Hien Luong'},
+    {id: 3, name: 'Tien Cong'}
 ];
 
 var port = 1000;
@@ -17,7 +18,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 app.get('/', function(req, res){
     res.render('index', {
-        name: 'aaaa'
+        name: 'Bảo. My Master. Your Dream Is Become SoftWare Developer. Making A lot of monney'
     });
 })
 
