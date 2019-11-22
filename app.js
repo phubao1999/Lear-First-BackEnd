@@ -24,13 +24,14 @@ app.get("/users", (req, res) =>
 );
 
 app.get("/users/search", (req, res) => {
+//   console.log(req);
   var q = req.query.q;
   var machedUsers = users.filter(user => {
     return user.name.toUpperCase().indexOf(q.toUpperCase()) !== -1;
   });
-  res.render('users/index', {
-    users: machedUsers  
-  })
+  res.render("users/index", {
+    users: machedUsers
+  });
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
