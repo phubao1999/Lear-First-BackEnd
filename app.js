@@ -1,5 +1,5 @@
-const express = require("express");
-const app = express();
+const Express = require("express");
+const app = Express();
 const port = 3000;
 const bodyParser = require("body-parser");
 const low = require("lowdb");
@@ -29,12 +29,12 @@ app.get("/users", (req, res) =>
 );
 
 app.get("/users/search", (req, res) => {
-  //   console.log(req);
   var q = req.query.q;
+  var users = db.get('users').value();
   var machedUsers = users.filter(user => {
     return user.name.toUpperCase().indexOf(q.toUpperCase()) !== -1;
   });
-  res.render("users/index", {
+  res.render('users/index', {
     users: machedUsers
   });
 });
