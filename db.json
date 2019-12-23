@@ -1,15 +1,12 @@
 {
   "users": [
     {
-      "name": "Luong loi",
-      "Phone": "0123"
+      "name": "Đinh Phan Nhật Linh",
+      "id": "PsSBh0ua"
     },
     {
-      "name": "baotuong",
-      "Phone": "0868945717"
-    },
-    {
-      "name": "Nhat Linh"
+      "name": "Phù Tường Bảo",
+      "id": "inzcudSB"
     }
   ]
 }
